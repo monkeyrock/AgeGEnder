@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('video');
 
     Promise.all([
-        faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-        faceapi.nets.ageGenderNet.loadFromUri('/models')
+        faceapi.nets.tinyFaceDetector.loadFromUri('AgeGEnder/models'),
+        faceapi.nets.ageGenderNet.loadFromUri('AgeGEnder/models')
     ]).then(startVideo);
 
     function startVideo() {
